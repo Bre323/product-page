@@ -1,5 +1,9 @@
 import { useState } from 'react'
 import viteLogo from '/vite.svg'
+import photo1 from './assets/dualsensePhoto1.jpg'
+import photo2 from './assets/dualsensePhoto2.jpg'
+import photo3 from './assets/dualsensePhoto3.jpg'
+import photo4 from './assets/dualsensePhoto4.jpg'
 import './App.css'
 
 function App() {
@@ -24,8 +28,29 @@ function App() {
         </div>
       </header>
 
-      <main className='bg-gray-700 w-full h-200'></main>
-      <footer className='bg-gray-800 w-full h-30'></footer>
+      <main className=' flex gap-10 bg-gray-700 w-full h-200'>
+        <div className="product">
+          <div className="photo">
+            <img className='m-10 h-100 w-100 rounded-2xl' src={photo1} alt="main photo" />
+          </div>
+          <div className="gallery flex gap-10">
+            <img className='h-25 w-25 rounded-2xl cursor-pointer' src={photo1} alt="product photo 1" />
+            <img className='h-25 w-25 rounded-2xl cursor-pointer' src={photo2} alt="product photo 2" />
+            <img className='h-25 w-25 rounded-2xl cursor-pointer' src={photo3} alt="product photo 3" />
+            <img className='h-25 w-25 rounded-2xl cursor-pointer' src={photo4} alt="product photo 4" />
+          </div>
+        </div>
+
+        <div>
+          <h1>Dualsense</h1>
+          <h2>R$ 300,00</h2>
+          <button>COMPRAR</button>
+        </div>
+      </main>
+
+      <footer className='flex items-center justify-center bg-gray-800 w-full h-30'>
+        <p>Made by <a href="https://github.com/Bre323" target='_blank'>Bre323</a></p>
+      </footer>
     </div>
   )
 }
