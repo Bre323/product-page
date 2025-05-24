@@ -28,7 +28,7 @@ function App() {
         </div>
       </header>
 
-      <main className=' flex gap-10 bg-gray-700 w-full h-200'>
+      <main className='flex justify-evenly bg-gray-700 w-full h-screen'>
         <div className="product">
           <div className="photo">
             <img className='m-10 h-100 w-100 rounded-2xl' src={photo1} alt="main photo" />
@@ -41,7 +41,7 @@ function App() {
           </div>
         </div>
 
-        <div>
+        <div className='m-10 w-50 text-gray-50 text-center'>
           <h1>Dualsense</h1>
           <h2>R$ 300,00</h2>
           <button>COMPRAR</button>
@@ -49,7 +49,7 @@ function App() {
       </main>
 
       <footer className='flex items-center justify-center bg-gray-800 w-full h-30'>
-        <p>Made by <a href="https://github.com/Bre323" target='_blank'>Bre323</a></p>
+        <p className='text-gray-50'>Made by <a className='hover:text-blue-200' href="https://github.com/Bre323" target='_blank'>Bre323</a></p>
       </footer>
     </div>
   )
