@@ -28,23 +28,23 @@ function App() {
         </div>
       </header>
 
-      <main className='flex justify-evenly bg-gray-700 w-full h-screen'>
-        <div className="product">
-          <div className="photo">
-            <img className='m-10 h-100 w-100 rounded-2xl' src={photo1} alt="main photo" />
+      <main className='flex justify-evenly items-center bg-gray-700 w-full h-screen'>
+        <div className="product flex flex-col justify-center gap-10">
+          <div className="photo flex justify-center">
+            <img className='h-100 w-100 rounded-2xl' src={photo1} alt="main photo" />
           </div>
           <div className="gallery flex gap-10">
-            <img className='h-25 w-25 rounded-2xl cursor-pointer' src={photo1} alt="product photo 1" />
-            <img className='h-25 w-25 rounded-2xl cursor-pointer' src={photo2} alt="product photo 2" />
-            <img className='h-25 w-25 rounded-2xl cursor-pointer' src={photo3} alt="product photo 3" />
-            <img className='h-25 w-25 rounded-2xl cursor-pointer' src={photo4} alt="product photo 4" />
+            <img className='h-25 w-25 rounded-2xl cursor-pointer hover:border-2 hover:border-sky-600' src={photo1} alt="product photo 1" />
+            <img className='h-25 w-25 rounded-2xl cursor-pointer hover:border-2 hover:border-sky-600' src={photo2} alt="product photo 2" />
+            <img className='h-25 w-25 rounded-2xl cursor-pointer hover:border-2 hover:border-sky-600' src={photo3} alt="product photo 3" />
+            <img className='h-25 w-25 rounded-2xl cursor-pointer hover:border-2 hover:border-sky-600' src={photo4} alt="product photo 4" />
           </div>
         </div>
 
         <div className='m-10 w-50 text-gray-50 text-center'>
-          <h1>Dualsense</h1>
-          <h2>R$ 300,00</h2>
-          <button>COMPRAR</button>
+          <h1 className='text-4xl text-bold mt-5 mb-7'>Dualsense</h1>
+          <h2 className='text-xl text-bold mb-5'>R$ 300,00</h2>
+          <button className='text-xl h-12 w-32 bg-sky-700 shadow-md rounded-md hover:bg-sky-600 cursor-pointer'>COMPRAR</button>
         </div>
       </main>
 
